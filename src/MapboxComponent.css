@@ -1,0 +1,50 @@
+/* Container for all map cards */
+.maps-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* Gap between cards */
+  text-align: center;
+
+  padding: 16px;
+  justify-content: space-between; /* Center cards horizontally */
+  align-items: center; /* Center cards vertically */
+}
+
+/* Individual card styling */
+.map-card {
+  flex: 1 1 calc(33.333% - 16px); /* 3 cards per row with the gap accounted for */
+  max-width: 500px; /* Maximum width of each card */
+  min-height: 400px; /* Minimum height to ensure cards are visible */
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background-color: #fff;
+}
+
+/* Hover effect for card */
+.map-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+/* Header inside card */
+.map-card h3 {
+  text-align: center;
+  margin: 8px;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 900px) {
+  .map-card {
+    flex: 1 1 calc(50% - 16px); /* 2 cards per row on smaller screens */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .map-card {
+    flex: 1 1 calc(100% - 16px); /* 1 card per row on very small screens */
+  }
+}

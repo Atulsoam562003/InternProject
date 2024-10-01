@@ -1,0 +1,42 @@
+/* header.css */
+.navbar-custom {
+  background-color: #f8f9fa; /* Example background color */
+  padding: 10px 20px; /* Example padding */
+}
+
+.logo {
+  width: 50px; /* Example width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Example margin */
+  border-radius: 30px;
+}
+
+.brand-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #343a40; /* Example text color */
+}
+
+.nav-link-custom {
+  color: #1a8efd; /* Example link color */
+  margin-right: 15px; /* Example margin */
+}
+
+.role-text {
+  font-style: italic; /* Example font style */
+  margin-left: 10px; /* Example margin */
+}
+
+.signout-button {
+  color: #ffffff; /* Text color */
+  background-color: #1a8efd; /* Button background color */
+  border-color: #1a8efd; /* Button border color */
+  margin-left: 15px; /* Example margin */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.signout-button:hover {
+  color: #ffffff; /* Ensure text color remains white */
+  background-color: #0056b3; /* Darker blue for hover */
+  border-color: #0056b3; /* Darker blue border for hover */
+}
